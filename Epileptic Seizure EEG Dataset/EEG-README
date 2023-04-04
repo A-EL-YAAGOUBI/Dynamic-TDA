@@ -1,0 +1,69 @@
+EEG 
+
+Data is collected from an epileptic patient at the 
+Epilepsy Disorder Laboratory at the University of 
+Michigan. Primary investigator is: Beth Malow, M.D.
+
+The dataset here is a time-truncated version of the 
+EEGs that were used for analysis in the following 
+papers: 
+
+Automatic Statistical Analysis of Bivariate Non-Stationary 
+Time Series, Journal of the American Statistical Association, 
+2001, 96, 543-560. (Authors: Ombao, H., Raz, J., von Sachs, R., 
+Malow, B.)
+
+Improved Time-Frequency Analysis of Multi-channel EEG 
+Using the SLEX Method, IEEE Transactions of Biomedical 
+Engineering, 2002, accepted for publication. (Authors: Cranstoun, S., 
+Ombao, H., von Sachs, R., Guo, W. and Litt, B.)
+
+Facts about the EEG dataset:
+
+sampling rate 100Hz
+scalp electrodes
+they are differential electrodes (no reference)
+the correspondence channel - electrode is:
+
+We have 2 matrices, namely eeg_noseiz and eeg_seiz
+
+eeg_noseiz = non-seizure part of the EEG
+eeg_seiz = seizure part of the EEG
+
+Each matrix has T=128 rows and 21 columns. The j-th 
+column is the EEG recorded at the j-th electrode 
+channel. See reference below for electrode placement. 
+We have T=128 time points at each of the channel 
+recording below.
+
+For further reference: the EEG signal was sampled at 
+the rate of 100 Hertz. 
+
+ 1 Fp1
+ 2 Fp2
+ 3 F3
+ 4 F4
+ 5 C3
+ 6 C4
+ 7 P3
+ 8 P4
+ 9 O1
+10 O2
+11 SP1
+12 SP2
+13 F7
+14 F8
+15 T3
+16 T4
+17 T5
+18 T6
+19 Fz
+20 Cz
+21 Pz
+
+
+##### NOTE: don't use SP1 and SP2 (corrupted)
+##### Cz need not be used (reference)
+
+
+
